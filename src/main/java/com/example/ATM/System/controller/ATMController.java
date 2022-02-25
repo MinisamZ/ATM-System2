@@ -1,7 +1,7 @@
 package com.example.ATM.System.controller;
 
 import com.example.ATM.System.model.User;
-import com.example.ATM.System.repository.BankAccountRepositroy;
+import com.example.ATM.System.repository.BankAccountRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.*;
 
 @Controller
 public class ATMController {
-    private final BankAccountRepositroy bankAccountRepositroy;
+    private final BankAccountRepository bankAccountRepositroy;
 
     @Autowired
-    public ATMController(BankAccountRepositroy bankAccountRepositroy) {
+    public ATMController(BankAccountRepository bankAccountRepositroy) {
         this.bankAccountRepositroy = bankAccountRepositroy;
     }
 
